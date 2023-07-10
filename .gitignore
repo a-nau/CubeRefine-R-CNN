@@ -1,0 +1,13 @@
+# folders or files
+cache/
+datasets/*
+output/
+configs/ckpt
+
+# filetypes
+*.pyc
+*.mexa64
+*/output/*
+*/output*/*
+*~
+*.so
