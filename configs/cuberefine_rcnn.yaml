@@ -1,0 +1,10 @@
+_BASE_: "Base_Parcel3D.yaml"
+MODEL:
+  CUBE_ON: True
+  MESH_ON: True
+  FREEZE_BACKBONE_COMPLETE: False
+  FREEZE_RPN: False
+  FREEZE_BOX_HEAD: False
+  FREEZE_CUBE_HEAD: False
+  FREEZE_MESH_HEAD: False
+OUTPUT_DIR: "output/test"

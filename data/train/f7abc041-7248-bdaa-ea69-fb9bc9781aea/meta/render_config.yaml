@@ -1,0 +1,29 @@
+RENDER:
+  AZIMUTH_LOW: 0
+  AZIMUTH_UP: 360
+  ELEVATION_LOW: 20
+  ELEVATION_UP: 60
+  ENVMAP: random
+  FOCAL_LOW: 25
+  FOCAL_UP: 55
+  IMAGE_HEIGHT: 720
+  IMAGE_WIDTH: 1080
+  SAMPLE: 128
+  SEED: 3462001754
+  VIEWS: 1
+SCENARIO:
+  CATEGORY_ID: 0
+  DISTRACTORS:
+  - google_scanned_objects/Ecoforms_Plant_Container_S14Turquoise
+  FLAG: train
+  ID: f7abc041-7248-bdaa-ea69-fb9bc9781aea
+  IMAGE_ID: 4950
+  MODEL:
+    BINVOX: google_scanned_objects/Nestle_Raisinets_Milk_Chocolate_35_oz_992_g/binvox/model.binvox
+    MTL: google_scanned_objects/Nestle_Raisinets_Milk_Chocolate_35_oz_992_g/meshes/model.mtl
+    NAME: Nestle_Raisinets_Milk_Chocolate_35_oz_992_g
+    OBJ: google_scanned_objects/Nestle_Raisinets_Milk_Chocolate_35_oz_992_g/meshes/model.obj
+  OUTPUT: parcel3d/train/f7abc041-7248-bdaa-ea69-fb9bc9781aea
+  PARCEL_TYPE: normal
+  STICKER: []
+  TEXTURE: cardboard/textures/texture_0035.png

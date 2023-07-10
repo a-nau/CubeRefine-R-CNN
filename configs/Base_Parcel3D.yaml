@@ -1,0 +1,68 @@
+_BASE_: "Base.yaml"
+SOLVER:
+  TYPE: "sgd"
+  IMS_PER_BATCH: 16
+  BASE_LR: 0.02
+  WEIGHT_DECAY: 0.0001
+  GAMMA: 0.25
+  STEPS: (7500, 12500, 17500)
+  MAX_ITER: 20000
+  WARMUP_ITERS: 1500
+  WARMUP_FACTOR: 0.1
+TEST:
+  EVAL_PERIOD: 1000 # also better eval images
+VIS_PERIOD: 1000  # only bbox images
+DATALOADER:
+  NUM_WORKERS: 30
+DATASETS:
+  TRAIN: ('parcel3d_train_10',)
+  TEST: ('parcel3d_validation_1',)
+  CATEGORY_NAMES: ('normal box',)
+MODEL:
+  WEIGHTS: data/cubercnn_box_oneclass.pth  # original checkpoint with adjusted head size
+  BACKBONE:
+    FREEZE_AT: 4
+  ROI_HEADS:
+    NUM_CLASSES: 1  
+  ROI_CUBE_HEAD:
+    DIMS_PRIORS_ENABLED: True
+    DISENTANGLED_LOSS: True
+    ALLOCENTRIC_POSE: True
+    VIRTUAL_FOCAL: 512.0
+    VIRTUAL_DEPTH: True
+    CHAMFER_POSE: True
+    SCALE_ROI_BOXES: 0.0  # 0.0 = no
+  ROI_MESH_HEAD:
+    NAME : "MeshRCNNGraphConvHead"
+    POOLER_RESOLUTION : 14
+    POOLER_SAMPLING_RATIO : 2
+    # Type of pooling operation applied to the incoming feature map for each RoI
+    POOLER_TYPE : "ROIAlign"
+    # Numer of stages
+    NUM_STAGES : 3
+    NUM_GRAPH_CONVS : 3  # per stage
+    GRAPH_CONV_DIM : 128
+    GRAPH_CONV_INIT : "normal"
+    # Mesh sampling
+    GT_NUM_SAMPLES : 5000
+    PRED_NUM_SAMPLES : 5000
+    # loss weights
+    CHAMFER_LOSS_WEIGHT : 1.0
+    NORMALS_LOSS_WEIGHT : 0.1
+    EDGE_LOSS_WEIGHT : 1.0
+    # coord thresh
+    GT_COORD_THRESH : 0.0  # 5.0
+    # Init ico_sphere level (only for when voxel_on is false)
+    ICO_SPHERE_LEVEL : -1
+    CUBOID_MESH_DIVISION_LEVELS : 4  # 2~100, 3~400, 4~1500 vertices
+    # Model
+    ZN_GCONV : 0.5  # % of updates that is dropped
+    CONV_TYPE : "Graph"  # Graph (default), ResGraph, ZNG (Adjustments), PyG: GCN, FeaSt, GATv2, DNA, SuperGAT, ResGatedGraph
+  CUBE_ON: True
+  MESH_ON: True
+  FREEZE_BACKBONE_COMPLETE: False
+  FREEZE_RPN: False
+  FREEZE_BOX_HEAD: False
+  FREEZE_CUBE_HEAD: False
+  FREEZE_MESH_HEAD: False
+OUTPUT_DIR: "output/test"

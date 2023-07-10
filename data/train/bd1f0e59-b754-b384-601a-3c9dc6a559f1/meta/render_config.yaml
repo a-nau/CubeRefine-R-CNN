@@ -1,0 +1,31 @@
+RENDER:
+  AZIMUTH_LOW: 0
+  AZIMUTH_UP: 360
+  ELEVATION_LOW: 20
+  ELEVATION_UP: 60
+  ENVMAP: random
+  FOCAL_LOW: 25
+  FOCAL_UP: 55
+  IMAGE_HEIGHT: 720
+  IMAGE_WIDTH: 1080
+  SAMPLE: 128
+  SEED: 2803347729
+  VIEWS: 1
+SCENARIO:
+  CATEGORY_ID: 0
+  DISTRACTORS:
+  - google_scanned_objects/Womens_Canvas_Bahama_in_Black
+  - google_scanned_objects/Romantic_Blush_Tieks_Metallic_Italian_Leather_Ballet_Flats
+  - google_scanned_objects/Melissa_Doug_Shape_Sorting_Clock
+  FLAG: train
+  ID: bd1f0e59-b754-b384-601a-3c9dc6a559f1
+  IMAGE_ID: 3748
+  MODEL:
+    BINVOX: google_scanned_objects/Luigis_Mansion_Dark_Moon_Nintendo_3DS_Game/binvox/model.binvox
+    MTL: google_scanned_objects/Luigis_Mansion_Dark_Moon_Nintendo_3DS_Game/meshes/model.mtl
+    NAME: Luigis_Mansion_Dark_Moon_Nintendo_3DS_Game
+    OBJ: google_scanned_objects/Luigis_Mansion_Dark_Moon_Nintendo_3DS_Game/meshes/model.obj
+  OUTPUT: parcel3d/train/bd1f0e59-b754-b384-601a-3c9dc6a559f1
+  PARCEL_TYPE: normal
+  STICKER: []
+  TEXTURE: google_scanned_objects/Luigis_Mansion_Dark_Moon_Nintendo_3DS_Game/materials/textures/texture.png

@@ -1,0 +1,33 @@
+RENDER:
+  AZIMUTH_LOW: -30
+  AZIMUTH_UP: 30
+  ELEVATION_LOW: 20
+  ELEVATION_UP: 60
+  ENVMAP: random
+  FOCAL_LOW: 25
+  FOCAL_UP: 55
+  IMAGE_HEIGHT: 720
+  IMAGE_WIDTH: 1080
+  SAMPLE: 128
+  SEED: 1880721450
+  VIEWS: 1
+SCENARIO:
+  CATEGORY_ID: 1
+  DISTRACTORS:
+  - google_scanned_objects/Reebok_DMX_MAX_PLUS_RAINWALKER
+  - google_scanned_objects/Twinlab_100_Whey_Protein_Fuel_Cookies_and_Cream
+  FLAG: train
+  ID: fcc807b1-9ba0-ff05-e1f9-a680fa26617b
+  IMAGE_ID: 1265
+  MODEL:
+    BINVOX: google_scanned_objects/Diet_Pepsi_Soda_Cola12_Pack_12_oz_Cans/binvox/deformed_08_0013_02.binvox
+    MTL: google_scanned_objects/Diet_Pepsi_Soda_Cola12_Pack_12_oz_Cans/meshes/model.mtl
+    NAME: Diet_Pepsi_Soda_Cola12_Pack_12_oz_Cans
+    OBJ: google_scanned_objects/Diet_Pepsi_Soda_Cola12_Pack_12_oz_Cans/meshes/deformed/falling_20211221_12-34-40.809209/deformed_08_0013_02.obj
+  OUTPUT: parcel3d/train/fcc807b1-9ba0-ff05-e1f9-a680fa26617b
+  PARCEL_TYPE: damaged
+  STICKER:
+  - /data/LLD-logo-files/biletino.png
+  - /data/LLD-logo-files/labviewforum.png
+  - /data/LLD-logo-files/jamnews.png
+  TEXTURE: google_scanned_objects/Diet_Pepsi_Soda_Cola12_Pack_12_oz_Cans/materials/textures/texture.png

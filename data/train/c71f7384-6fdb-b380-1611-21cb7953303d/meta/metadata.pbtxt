@@ -1,0 +1,35 @@
+model {
+  file: "model.sdf"
+}
+name: "Nestle_Pure_Life_Exotics_Sparkling_Water_Strawberry_Dragon_Fruit_8_count_12_fl_oz_can"
+description: "Nestle Pure Life Exotics Sparkling Water, Strawberry Dragon Fruit - 8 count, 12 fl oz can"
+version: 1
+authors {
+  name: "Google"
+  email: "scanned-objects@google.com"
+}
+legal {
+  copyright: "Copyright 2020 Google LLC."
+  license: "Creative Commons Attribution 4.0 International"
+}
+annotations {
+  key: "brand"
+  value: "Nestle"
+}
+annotations {
+  key: "gtin"
+  value: "00068274195327"
+}
+annotations {
+  key: "sku"
+  value: "00068274195327"
+}
+compatibilities {
+  name: "Gazebo"
+  version {
+    major: 11
+  }
+}
+categories {
+  first: "Consumer Goods"
+}

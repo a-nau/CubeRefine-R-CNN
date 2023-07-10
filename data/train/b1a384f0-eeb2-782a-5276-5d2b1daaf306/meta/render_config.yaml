@@ -1,0 +1,34 @@
+RENDER:
+  AZIMUTH_LOW: -30
+  AZIMUTH_UP: 30
+  ELEVATION_LOW: 20
+  ELEVATION_UP: 60
+  ENVMAP: random
+  FOCAL_LOW: 25
+  FOCAL_UP: 55
+  IMAGE_HEIGHT: 720
+  IMAGE_WIDTH: 1080
+  SAMPLE: 128
+  SEED: 18391362
+  VIEWS: 1
+SCENARIO:
+  CATEGORY_ID: 1
+  DISTRACTORS:
+  - google_scanned_objects/Fisher_price_Classic_Toys_Buzzy_Bee
+  - google_scanned_objects/Reebok_KAMIKAZE_II_MID
+  FLAG: train
+  ID: b1a384f0-eeb2-782a-5276-5d2b1daaf306
+  IMAGE_ID: 4393
+  MODEL:
+    BINVOX: google_scanned_objects/Melissa_Doug_See_Spell/binvox/deformed_01_0230_04.binvox
+    MTL: google_scanned_objects/Melissa_Doug_See_Spell/meshes/model.mtl
+    NAME: Melissa_Doug_See_Spell
+    OBJ: google_scanned_objects/Melissa_Doug_See_Spell/meshes/deformed/falling_20211221_12-34-39.584182/deformed_01_0230_04.obj
+  OUTPUT: parcel3d/train/b1a384f0-eeb2-782a-5276-5d2b1daaf306
+  PARCEL_TYPE: damaged
+  STICKER:
+  - /data/LLD-logo-files/echo-news.png
+  - /data/LLD-logo-files/webtopsolutions.png
+  - cardboard/labels/fragile/fragile_glass_2.png
+  - cardboard/labels/fragile/fragile_glass_1.png
+  TEXTURE: google_scanned_objects/Melissa_Doug_See_Spell/materials/textures/texture.png

@@ -1,0 +1,39 @@
+model {
+  file: "model.sdf"
+}
+name: "Diet_Pepsi_Soda_Cola12_Pack_12_oz_Cans"
+description: "Diet Pepsi Soda Cola,12 Pack 12 oz Cans"
+version: 1
+authors {
+  name: "Google"
+  email: "scanned-objects@google.com"
+}
+legal {
+  copyright: "Copyright 2020 Google LLC."
+  license: "Creative Commons Attribution 4.0 International"
+}
+annotations {
+  key: "brand"
+  value: "Diet"
+}
+annotations {
+  key: "gtin"
+  value: "00012000809958"
+}
+annotations {
+  key: "mpn"
+  value: "pep83775"
+}
+annotations {
+  key: "sku"
+  value: "00012000809958"
+}
+compatibilities {
+  name: "Gazebo"
+  version {
+    major: 11
+  }
+}
+categories {
+  first: "Consumer Goods"
+}

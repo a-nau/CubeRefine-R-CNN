@@ -1,0 +1,28 @@
+RENDER:
+  AZIMUTH_LOW: -30
+  AZIMUTH_UP: 30
+  ELEVATION_LOW: 20
+  ELEVATION_UP: 60
+  ENVMAP: random
+  FOCAL_LOW: 25
+  FOCAL_UP: 55
+  IMAGE_HEIGHT: 720
+  IMAGE_WIDTH: 1080
+  SAMPLE: 128
+  SEED: 2452543484
+  VIEWS: 1
+SCENARIO:
+  CATEGORY_ID: 1
+  DISTRACTORS: []
+  FLAG: train
+  ID: 369b8d3d-a061-8766-2e87-439918bac849
+  IMAGE_ID: 2535
+  MODEL:
+    BINVOX: google_scanned_objects/Brother_Printing_Cartridge_PC501/binvox/deformed_05_0355_02.binvox
+    MTL: google_scanned_objects/Brother_Printing_Cartridge_PC501/meshes/model.mtl
+    NAME: Brother_Printing_Cartridge_PC501
+    OBJ: google_scanned_objects/Brother_Printing_Cartridge_PC501/meshes/deformed/falling_20211221_12-34-39.810291/deformed_05_0355_02.obj
+  OUTPUT: parcel3d/train/369b8d3d-a061-8766-2e87-439918bac849
+  PARCEL_TYPE: damaged
+  STICKER: []
+  TEXTURE: cardboard/textures/texture_0016.png

@@ -1,0 +1,33 @@
+RENDER:
+  AZIMUTH_LOW: -30
+  AZIMUTH_UP: 30
+  ELEVATION_LOW: 20
+  ELEVATION_UP: 60
+  ENVMAP: random
+  FOCAL_LOW: 25
+  FOCAL_UP: 55
+  IMAGE_HEIGHT: 720
+  IMAGE_WIDTH: 1080
+  SAMPLE: 128
+  SEED: 2390304801
+  VIEWS: 1
+SCENARIO:
+  CATEGORY_ID: 1
+  DISTRACTORS: []
+  FLAG: train
+  ID: c71f7384-6fdb-b380-1611-21cb7953303d
+  IMAGE_ID: 4879
+  MODEL:
+    BINVOX: google_scanned_objects/Nestle_Pure_Life_Exotics_Sparkling_Water_Strawberry_Dragon_Fruit_8_count_12_fl_oz_can/binvox/deformed_04_0131_07.binvox
+    MTL: google_scanned_objects/Nestle_Pure_Life_Exotics_Sparkling_Water_Strawberry_Dragon_Fruit_8_count_12_fl_oz_can/meshes/model.mtl
+    NAME: Nestle_Pure_Life_Exotics_Sparkling_Water_Strawberry_Dragon_Fruit_8_count_12_fl_oz_can
+    OBJ: google_scanned_objects/Nestle_Pure_Life_Exotics_Sparkling_Water_Strawberry_Dragon_Fruit_8_count_12_fl_oz_can/meshes/deformed/falling_20211221_12-34-37.980266/deformed_04_0131_07.obj
+  OUTPUT: parcel3d/train/c71f7384-6fdb-b380-1611-21cb7953303d
+  PARCEL_TYPE: damaged
+  STICKER:
+  - /data/LLD-logo-files/varietypc.png
+  - /data/LLD-logo-files/ipce.png
+  - cardboard/labels/shipping_label/dhl/shipping_label_2.png
+  - cardboard/labels/fragile/handle_with_care_two_hands_1.png
+  - cardboard/labels/fragile/fragile_glass_4.png
+  TEXTURE: google_scanned_objects/Nestle_Pure_Life_Exotics_Sparkling_Water_Strawberry_Dragon_Fruit_8_count_12_fl_oz_can/materials/textures/texture.png

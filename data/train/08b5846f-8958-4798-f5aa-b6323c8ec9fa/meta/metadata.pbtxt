@@ -1,0 +1,35 @@
+model {
+  file: "model.sdf"
+}
+name: "Epson_T5803_Ink_Cartridge_Magenta_1pack"
+description: "Epson T5803 Ink Cartridge, Magenta - 1-pack"
+version: 1
+authors {
+  name: "Google"
+  email: "scanned-objects@google.com"
+}
+legal {
+  copyright: "Copyright 2020 Google LLC."
+  license: "Creative Commons Attribution 4.0 International"
+}
+annotations {
+  key: "brand"
+  value: "Epson"
+}
+annotations {
+  key: "gtin"
+  value: "00010343858794"
+}
+annotations {
+  key: "sku"
+  value: "00010343858794,00829160921068"
+}
+compatibilities {
+  name: "Gazebo"
+  version {
+    major: 11
+  }
+}
+categories {
+  first: "Consumer Goods"
+}

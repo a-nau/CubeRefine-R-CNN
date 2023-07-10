@@ -1,0 +1,35 @@
+model {
+  file: "model.sdf"
+}
+name: "Luigis_Mansion_Dark_Moon_Nintendo_3DS_Game"
+description: "Luigi\'s Mansion: Dark Moon [Nintendo 3DS Game]"
+version: 1
+authors {
+  name: "Google"
+  email: "scanned-objects@google.com"
+}
+legal {
+  copyright: "Copyright 2020 Google LLC."
+  license: "Creative Commons Attribution 4.0 International"
+}
+annotations {
+  key: "brand"
+  value: "Next Level Games"
+}
+annotations {
+  key: "gtin"
+  value: "00045496742157"
+}
+annotations {
+  key: "sku"
+  value: "00045496742157"
+}
+compatibilities {
+  name: "Gazebo"
+  version {
+    major: 11
+  }
+}
+categories {
+  first: "Media Cases"
+}

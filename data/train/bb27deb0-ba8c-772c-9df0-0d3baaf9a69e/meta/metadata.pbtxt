@@ -1,0 +1,35 @@
+model {
+  file: "model.sdf"
+}
+name: "The_Coffee_Bean_Tea_Leaf_KCup_Packs_Jasmine_Green_Tea_16_count"
+description: "The Coffee Bean & Tea Leaf K-Cup Packs, Jasmine Green Tea - 16 count"
+version: 1
+authors {
+  name: "Google"
+  email: "scanned-objects@google.com"
+}
+legal {
+  copyright: "Copyright 2020 Google LLC."
+  license: "Creative Commons Attribution 4.0 International"
+}
+annotations {
+  key: "brand"
+  value: "The Coffee Bean & Tea Leaf"
+}
+annotations {
+  key: "gtin"
+  value: "00099555084436"
+}
+annotations {
+  key: "sku"
+  value: "00099555084436"
+}
+compatibilities {
+  name: "Gazebo"
+  version {
+    major: 11
+  }
+}
+categories {
+  first: "Consumer Goods"
+}

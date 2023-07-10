@@ -1,0 +1,33 @@
+RENDER:
+  AZIMUTH_LOW: -30
+  AZIMUTH_UP: 30
+  ELEVATION_LOW: 20
+  ELEVATION_UP: 60
+  ENVMAP: random
+  FOCAL_LOW: 25
+  FOCAL_UP: 55
+  IMAGE_HEIGHT: 720
+  IMAGE_WIDTH: 1080
+  SAMPLE: 128
+  SEED: 3713399916
+  VIEWS: 1
+SCENARIO:
+  CATEGORY_ID: 1
+  DISTRACTORS:
+  - google_scanned_objects/Saccharomyces_Boulardii_MOS_Value_Size
+  - google_scanned_objects/Tag_Dishtowel_Basket_Weave_Red_18_x_26
+  - google_scanned_objects/ASICS_GELTour_Lyte_WhiteOrchidSilver
+  FLAG: validation
+  ID: f2117277-8eaf-312c-ba33-7074fd219396
+  IMAGE_ID: 1231
+  MODEL:
+    BINVOX: google_scanned_objects/Google_Cardboard_Original_package/binvox/deformed_05_0243_00.binvox
+    MTL: google_scanned_objects/Google_Cardboard_Original_package/meshes/model.mtl
+    NAME: Google_Cardboard_Original_package
+    OBJ: google_scanned_objects/Google_Cardboard_Original_package/meshes/deformed/falling_20211221_12-34-37.981892/deformed_05_0243_00.obj
+  OUTPUT: parcel3d/validation/f2117277-8eaf-312c-ba33-7074fd219396
+  PARCEL_TYPE: damaged
+  STICKER:
+  - cardboard/labels/fragile/fragile_handle_with_care_1.png
+  - cardboard/labels/fragile/fragile_handle_with_care_1.png
+  TEXTURE: cardboard/textures/texture_0034.png

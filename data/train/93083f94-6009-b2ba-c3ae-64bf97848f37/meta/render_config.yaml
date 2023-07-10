@@ -1,0 +1,32 @@
+RENDER:
+  AZIMUTH_LOW: 0
+  AZIMUTH_UP: 360
+  ELEVATION_LOW: 20
+  ELEVATION_UP: 60
+  ENVMAP: random
+  FOCAL_LOW: 25
+  FOCAL_UP: 55
+  IMAGE_HEIGHT: 720
+  IMAGE_WIDTH: 1080
+  SAMPLE: 128
+  SEED: 3913421245
+  VIEWS: 1
+SCENARIO:
+  CATEGORY_ID: 0
+  DISTRACTORS:
+  - google_scanned_objects/Central_Garden_Flower_Pot_Goo_425
+  - google_scanned_objects/Glycerin_11_Color_BrllntBluSkydvrSlvrBlckWht_Size_80
+  - google_scanned_objects/Mens_Largo_Slip_On_in_Taupe_gooyS417q4R
+  FLAG: train
+  ID: 93083f94-6009-b2ba-c3ae-64bf97848f37
+  IMAGE_ID: 2976
+  MODEL:
+    BINVOX: google_scanned_objects/House_of_Cards_The_Complete_First_Season_4_Discs_DVD/binvox/model.binvox
+    MTL: google_scanned_objects/House_of_Cards_The_Complete_First_Season_4_Discs_DVD/meshes/model.mtl
+    NAME: House_of_Cards_The_Complete_First_Season_4_Discs_DVD
+    OBJ: google_scanned_objects/House_of_Cards_The_Complete_First_Season_4_Discs_DVD/meshes/model.obj
+  OUTPUT: parcel3d/train/93083f94-6009-b2ba-c3ae-64bf97848f37
+  PARCEL_TYPE: normal
+  STICKER:
+  - cardboard/labels/shipping_label/dhl/shipping_label_13.jpg
+  TEXTURE: google_scanned_objects/House_of_Cards_The_Complete_First_Season_4_Discs_DVD/materials/textures/texture.png

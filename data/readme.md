@@ -1,0 +1,1 @@
+The data is from the [Parcel3D](https://zenodo.org/record/8032204) dataset, and thus, licensed for academic research use only.

@@ -1,0 +1,26 @@
+{
+    "build": {
+        "dockerfile": "../Dockerfile",
+    },
+    "runArgs": [
+        "--runtime=nvidia",
+    ],
+    "containerEnv": {
+        "NVIDIA_VISIBLE_DEVICES": "0"
+    },
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "ms-toolsai.jupyter",
+                "ms-python.python",
+                "ms-python.vscode-pylance",
+                "ms-python.black-formatter",
+                "ms-python.isort",
+                "garytyler.darcula-pycharm",
+                "ms-azuretools.vscode-docker",
+                "mhutchie.git-graph",
+                "ms-toolsai.jupyter"
+            ]
+        }
+    },
+}

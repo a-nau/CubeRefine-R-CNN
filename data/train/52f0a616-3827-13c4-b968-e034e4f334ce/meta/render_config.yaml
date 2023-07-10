@@ -1,0 +1,32 @@
+RENDER:
+  AZIMUTH_LOW: 0
+  AZIMUTH_UP: 360
+  ELEVATION_LOW: 20
+  ELEVATION_UP: 60
+  ENVMAP: random
+  FOCAL_LOW: 25
+  FOCAL_UP: 55
+  IMAGE_HEIGHT: 720
+  IMAGE_WIDTH: 1080
+  SAMPLE: 128
+  SEED: 3355598947
+  VIEWS: 1
+SCENARIO:
+  CATEGORY_ID: 0
+  DISTRACTORS:
+  - google_scanned_objects/Mens_ASV_Billfish_Boat_Shoe_in_Tan_Leather_wmUJ5PbwANc
+  - google_scanned_objects/Black_Decker_CM2035B_12Cup_Thermal_Coffeemaker
+  - google_scanned_objects/Avengers_Thor_PLlrpYniaeB
+  FLAG: train
+  ID: 52f0a616-3827-13c4-b968-e034e4f334ce
+  IMAGE_ID: 6705
+  MODEL:
+    BINVOX: google_scanned_objects/Tena_Pads_Heavy_Long_42_pads/binvox/model_04.binvox
+    MTL: google_scanned_objects/Tena_Pads_Heavy_Long_42_pads/meshes/model.mtl
+    NAME: Tena_Pads_Heavy_Long_42_pads
+    OBJ: google_scanned_objects/Tena_Pads_Heavy_Long_42_pads/meshes/scaled/model_04.obj
+  OUTPUT: parcel3d/train/52f0a616-3827-13c4-b968-e034e4f334ce
+  PARCEL_TYPE: normal
+  STICKER:
+  - cardboard/labels/shipping_label/vda2/2019-02-28_VDA_Master_2_5.jpg
+  TEXTURE: google_scanned_objects/Tena_Pads_Heavy_Long_42_pads/materials/textures/texture.png

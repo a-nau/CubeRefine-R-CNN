@@ -1,0 +1,33 @@
+RENDER:
+  AZIMUTH_LOW: -30
+  AZIMUTH_UP: 30
+  ELEVATION_LOW: 20
+  ELEVATION_UP: 60
+  ENVMAP: random
+  FOCAL_LOW: 25
+  FOCAL_UP: 55
+  IMAGE_HEIGHT: 720
+  IMAGE_WIDTH: 1080
+  SAMPLE: 128
+  SEED: 621470820
+  VIEWS: 1
+SCENARIO:
+  CATEGORY_ID: 1
+  DISTRACTORS:
+  - google_scanned_objects/Threshold_Tray_Rectangle_Porcelain
+  FLAG: train
+  ID: bb27deb0-ba8c-772c-9df0-0d3baaf9a69e
+  IMAGE_ID: 5396
+  MODEL:
+    BINVOX: google_scanned_objects/The_Coffee_Bean_Tea_Leaf_KCup_Packs_Jasmine_Green_Tea_16_count/binvox/deformed_01_0059_14.binvox
+    MTL: google_scanned_objects/The_Coffee_Bean_Tea_Leaf_KCup_Packs_Jasmine_Green_Tea_16_count/meshes/model.mtl
+    NAME: The_Coffee_Bean_Tea_Leaf_KCup_Packs_Jasmine_Green_Tea_16_count
+    OBJ: google_scanned_objects/The_Coffee_Bean_Tea_Leaf_KCup_Packs_Jasmine_Green_Tea_16_count/meshes/deformed/falling_20211221_12-34-40.809209/deformed_01_0059_14.obj
+  OUTPUT: parcel3d/train/bb27deb0-ba8c-772c-9df0-0d3baaf9a69e
+  PARCEL_TYPE: damaged
+  STICKER:
+  - /data/LLD-logo-files/maduradas.png
+  - /data/LLD-logo-files/tageo.png
+  - /data/LLD-logo-files/gutzitiert.png
+  - cardboard/labels/fragile/fragile_glass_1.png
+  TEXTURE: cardboard/textures/texture_0234.png

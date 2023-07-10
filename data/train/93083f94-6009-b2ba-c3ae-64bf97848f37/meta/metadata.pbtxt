@@ -1,0 +1,35 @@
+model {
+  file: "model.sdf"
+}
+name: "House_of_Cards_The_Complete_First_Season_4_Discs_DVD"
+description: "House of Cards: The Complete First Season [4 Discs] [DVD]"
+version: 1
+authors {
+  name: "Google"
+  email: "scanned-objects@google.com"
+}
+legal {
+  copyright: "Copyright 2020 Google LLC."
+  license: "Creative Commons Attribution 4.0 International"
+}
+annotations {
+  key: "brand"
+  value: "Sony Pictures"
+}
+annotations {
+  key: "gtin"
+  value: "00043396424708"
+}
+annotations {
+  key: "sku"
+  value: "00043396424708"
+}
+compatibilities {
+  name: "Gazebo"
+  version {
+    major: 11
+  }
+}
+categories {
+  first: "Media Cases"
+}

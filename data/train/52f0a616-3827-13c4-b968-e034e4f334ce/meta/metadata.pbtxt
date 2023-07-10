@@ -1,0 +1,39 @@
+model {
+  file: "model.sdf"
+}
+name: "Tena_Pads_Heavy_Long_42_pads"
+description: "Tena Pads, Heavy, Long - 42 pads\ndescription 1,045"
+version: 1
+authors {
+  name: "Google"
+  email: "scanned-objects@google.com"
+}
+legal {
+  copyright: "Copyright 2020 Google LLC."
+  license: "Creative Commons Attribution 4.0 International"
+}
+annotations {
+  key: "brand"
+  value: "Sony Ericsson"
+}
+annotations {
+  key: "gtin"
+  value: "380040476004"
+}
+annotations {
+  key: "mpn"
+  value: "sku377512"
+}
+annotations {
+  key: "sku"
+  value: "Test Item 1,045"
+}
+compatibilities {
+  name: "Gazebo"
+  version {
+    major: 11
+  }
+}
+categories {
+  first: "Consumer Goods"
+}

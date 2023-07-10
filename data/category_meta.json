@@ -1,0 +1,8 @@
+{
+    "thing_classes": [
+        "normal box"
+    ],
+    "thing_dataset_id_to_contiguous_id": {
+        "0": 0
+    }
+}
