@@ -4,6 +4,7 @@ on: [push]
 
 jobs:
   publish-docker-image:
+    permissions: write-all
     runs-on: ubuntu-latest
 
     steps:
