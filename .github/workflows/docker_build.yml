@@ -1,0 +1,22 @@
+name: publish_image
+
+on: [push]
+
+jobs:
+  publish-docker-image:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: Login to GitHub Container Registry
+      uses: docker/login-action@v1
+      with:
+        registry: ghcr.io
+        username: ${{ github.actor }}
+        password: ${{ secrets.GITHUB_TOKEN }}
+
+    - name: Build the Docker image
+      run: |
+        docker build --pull -f Dockerfile_CPU . --tag ghcr.io/a-nau/cuberefine-r-cnn:latest
+        docker push ghcr.io/a-nau/cuberefine-r-cnn:latest
