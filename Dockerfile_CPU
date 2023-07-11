@@ -11,6 +11,8 @@ RUN apt-get install -y libopencv-dev python3-opencv git cmake g++
 RUN mkdir -p /app
 WORKDIR /app
 
+COPY . /app
+
 RUN pip install --upgrade pip
 
 # Torch
