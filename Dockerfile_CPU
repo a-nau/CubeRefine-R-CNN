@@ -6,7 +6,7 @@ RUN apt-get -y update
 ENV DEBIAN_FRONTEND=noninteractive
 ENV TZ="America/New_York"
 
-RUN apt-get install -y libopencv-dev python3-opencv git cmake g++
+RUN apt-get install -y libopencv-dev python3-opencv git cmake g++ wget
 
 RUN mkdir -p /app
 WORKDIR /app
@@ -26,4 +26,7 @@ RUN pip install "git+https://github.com/facebookresearch/pytorch3d.git@v0.7.2"
 RUN pip install pyg_lib==0.2.0 torch_scatter==2.0.9 torch_sparse==0.6.13 torch_cluster==1.6.0 torch_spline_conv==1.2.1 -f https://data.pyg.org/whl/torch-1.11.0+cpu.html
 RUN pip install torch_geometric==2.3.1
 
+# Copy Code
 COPY . /app
+# Download ckpt
+RUN wget --no-check-certificate 'https://docs.google.com/uc?export=download&id=1dpYIiEqnvSd-Bd5c6bOrtBZHj8EHYh_U' -O /app/data/parcel3d.pth
