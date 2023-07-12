@@ -19,7 +19,7 @@ DATASETS:
   TEST: ('parcel3d_validation_1',)
   CATEGORY_NAMES: ('normal box',)
 MODEL:
-  WEIGHTS: data/cubercnn_box_oneclass.pth  # original checkpoint with adjusted head size
+  WEIGHTS: data/cubercnn_box.pth  # original checkpoint with adjusted head size
   BACKBONE:
     FREEZE_AT: 4
   ROI_HEADS:

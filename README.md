@@ -53,6 +53,13 @@ and run
 python tools/train_parcel3d.py --config-file configs/Base_Parcel3D.yaml --num-gpus 1
 ```
 
+### Pre-trained Weights
+
+You can download the pre-trained weights [here](https://drive.google.com/drive/folders/1sCNRldkVpJ_jSUpUJmdDNidNL8kC_hfR?usp=sharing)
+
+- `cubercnn_box.pth`: Cube R-CNN checkpoint with only output class `box`
+- `parcel3d.pth`: CubeRefine R-CNN checkpoint pre-trained on [Parcel3d](#parcel3d-dataset)
+
 ## Parcel3D Dataset
 
 You can download the Parcel3D dataset [here](https://zenodo.org/record/8032204). 
