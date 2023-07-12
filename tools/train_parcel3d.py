@@ -291,6 +291,8 @@ def do_train(cfg, model, dataset_id_to_unknown_cats, dataset_id_to_src, resume=F
     max_iter = cfg.SOLVER.MAX_ITER
     do_eval = cfg.TEST.EVAL_PERIOD > 0
 
+    device = torch.device("cuda") if torch.cuda.is_available() else torch.device("cpu")
+
     model.train()
 
     optimizer = build_optimizer(cfg, model)
@@ -443,7 +445,7 @@ def do_train(cfg, model, dataset_id_to_unknown_cats, dataset_id_to_src, resume=F
 
             # convert exploded to a float, then allreduce it,
             # if any process gradients have exploded then we skip together.
-            diverging_model = torch.tensor(float(diverging_model)).cuda()
+            diverging_model = torch.tensor(float(diverging_model)).to(device)
 
             if world_size > 1:
                 dist.all_reduce(diverging_model)
@@ -472,7 +474,7 @@ def do_train(cfg, model, dataset_id_to_unknown_cats, dataset_id_to_src, resume=F
 
             # Important for dist training. Convert to a float, then allreduce it,
             # if any process gradients have exploded then we must skip together.
-            retry = torch.tensor(float(retry)).cuda()
+            retry = torch.tensor(float(retry)).to(device)
 
             if world_size > 1:
                 dist.all_reduce(retry)

@@ -816,58 +816,6 @@ class OmniEval(COCOeval):
         toc = time.time()
         print("DONE (t={:0.2f}s).".format(toc - tic))
 
-    def compute_mesh_metrics(self, imgId, catId):
-        """
-        ! dummy, not used yet
-        ComputeIoU computes the IoUs by sorting based on "score"
-        for either 2D boxes (in 2D mode) or 3D boxes (in 3D mode)
-        """
-
-        device = (
-            torch.device("cuda:0") if torch.cuda.is_available() else torch.device("cpu")
-        )
-
-        p = self.params
-        if p.useCats:
-            gt = self._gts[imgId, catId]
-            dt = self._dts[imgId, catId]
-
-        else:
-            gt = [_ for cId in p.catIds for _ in self._gts[imgId, cId]]
-            dt = [_ for cId in p.catIds for _ in self._dts[imgId, cId]]
-
-        if len(gt) == 0 and len(dt) == 0:
-            return []
-
-        inds = np.argsort([-d["score"] for d in dt], kind="mergesort")
-        dt = [dt[i] for i in inds]
-        if len(dt) > p.maxDets[-1]:
-            dt = dt[0 : p.maxDets[-1]]
-
-        # compute mesh error
-        meshes = Meshes(
-            verts=[torch.tensor(d["mesh_verts_world"]) for d in dt],
-            faces=[torch.tensor(d["mesh_faces_world"]) for d in dt],
-        )
-        gt_meshes = [
-            _process_mesh(
-                load_mesh(Path(g["model"])),
-                None,
-                R=torch.tensor(g["model_R"]),
-                t=torch.tensor(g["model_t"]),
-            )
-            for g in gt
-        ]
-        gt_meshes = Meshes(
-            verts=[g[0] for g in gt_meshes],
-            faces=[g[1] for g in gt_meshes],
-        )
-        if len(gt_meshes) == 0 or len(meshes) == 0:
-            print("warning")
-            return []
-        shape_metrics = compare_meshes(meshes, gt_meshes, reduce=False)
-        return shape_metrics
-
     def computeIoU(self, imgId, catId, normalize=False):
         """
         ComputeIoU computes the IoUs by sorting based on "score"

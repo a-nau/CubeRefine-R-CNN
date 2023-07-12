@@ -54,7 +54,9 @@ class Pix3DEvaluator(DatasetEvaluator):
         self._output_dir = output_dir
 
         self._cpu_device = torch.device("cpu")
-        self._device = torch.device("cuda")
+        self._device = (
+            torch.device("cuda") if torch.cuda.is_available() else torch.device("cpu")
+        )
         self._logger = logging.getLogger(__name__)
 
         self._metadata = MetadataCatalog.get(dataset_name)

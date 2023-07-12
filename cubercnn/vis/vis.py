@@ -366,8 +366,10 @@ def draw_scene_view(
 
     else:
 
-        meshes_scene = join_meshes_as_scene(meshes).cuda()
-        device = meshes_scene.device
+        device = (
+            torch.device("cuda") if torch.cuda.is_available() else torch.device("cpu")
+        )
+        meshes_scene = join_meshes_as_scene(meshes).to(device)
         meshes_scene.textures = meshes_scene.textures.to(device)
 
         cameras = util.get_camera(K, im.shape[1], im.shape[0]).to(device)
