@@ -1,0 +1,19 @@
+_BASE_: "Base_Parcel3D.yaml"
+MODEL:
+  DEVICE: "cpu"
+  CUBE_ON: True
+  MESH_ON: True
+  FREEZE_BACKBONE_COMPLETE: False
+  FREEZE_RPN: False
+  FREEZE_BOX_HEAD: False
+  FREEZE_CUBE_HEAD: False
+  FREEZE_MESH_HEAD: False
+SOLVER:
+  TYPE: "sgd"
+  IMS_PER_BATCH: 1
+  MAX_ITER: 10
+MODEL:
+  WEIGHTS: ""
+TEST:
+  EVAL_PERIOD: 0
+OUTPUT_DIR: "output/test"
