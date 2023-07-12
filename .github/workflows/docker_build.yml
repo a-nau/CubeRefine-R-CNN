@@ -1,6 +1,7 @@
 name: publish_image
 
-on: [push]
+on:
+  workflow_dispatch:
 
 jobs:
   publish-docker-image:
